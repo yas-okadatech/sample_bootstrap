@@ -16,13 +16,125 @@
           integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
           crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" type="text/css" href="./styles.css"/>
+
   <title>Sidebar - Samples Bootstrap</title>
 </head>
 <body>
-<div class="container">
-  <h1>Sidebar</h1>
-
-
+<div class="slidemenu slidemenu-left">
+  <div class="slidemenu-header">
+    <div>
+      Header
+    </div>
+  </div>
+  <div class="slidemenu-body">
+    <ul class="slidemenu-content">
+      <li><a class="menu-item" href="">Menu 1</a></li>
+      <li><a class="menu-item" href="">Menu 2</a></li>
+      <li><a class="menu-item" href="">Menu 3</a></li>
+      <li><a class="menu-item" href="">Menu 4</a></li>
+      <li><a class="menu-item" href="">Menu 5</a></li>
+      <li><a class="menu-item" href="">Menu 6</a></li>
+      <li><a class="menu-item" href="">Menu 7</a></li>
+      <li><a class="menu-item" href="">Menu 8</a></li>
+      <li><a class="menu-item" href="">Menu 9</a></li>
+      <li><a class="menu-item" href="">Menu 10</a></li>
+      <li><a class="menu-item" href="">Menu 11</a></li>
+      <li><a class="menu-item" href="">Menu 12</a></li>
+      <li><a class="menu-item" href="">Menu 13</a></li>
+      <li><a class="menu-item" href="">Menu 14</a></li>
+      <li><a class="menu-item" href="">Menu 15</a></li>
+      <li><a class="menu-item" href="">Menu 16</a></li>
+      <li><a class="menu-item" href="">Menu 17</a></li>
+      <li><a class="menu-item" href="">Menu 18</a></li>
+      <li><a class="menu-item" href="">Menu 19</a></li>
+      <li><a class="menu-item" href="">Menu 20</a></li>
+      <li><a class="menu-item" href="">Menu 21</a></li>
+      <li><a class="menu-item" href="">Menu 22</a></li>
+      <li><a class="menu-item" href="">Menu 23</a></li>
+      <li><a class="menu-item" href="">Menu 24</a></li>
+      <li><a class="menu-item" href="">Menu 25</a></li>
+      <li><a class="menu-item" href="">Menu 26</a></li>
+      <li><a class="menu-item" href="">Menu 27</a></li>
+      <li><a class="menu-item" href="">Menu 28</a></li>
+      <li><a class="menu-item" href="">Menu 29</a></li>
+      <li><a class="menu-item" href="">Menu 30</a></li>
+    </ul>
+  </div>
 </div>
+
+<div class="slidemenu slidemenu-right">
+  <div class="slidemenu-header">
+    <div>
+      Header
+    </div>
+  </div>
+  <div class="slidemenu-body">
+    <ul class="slidemenu-content">
+      <li><a class="menu-item" href="">Menu 1</a></li>
+      <li><a class="menu-item" href="">Menu 2</a></li>
+      <li><a class="menu-item" href="">Menu 3</a></li>
+      <li><a class="menu-item" href="">Menu 4</a></li>
+      <li><a class="menu-item" href="">Menu 5</a></li>
+      <li><a class="menu-item" href="">Menu 6</a></li>
+      <li><a class="menu-item" href="">Menu 7</a></li>
+      <li><a class="menu-item" href="">Menu 8</a></li>
+      <li><a class="menu-item" href="">Menu 9</a></li>
+      <li><a class="menu-item" href="">Menu 10</a></li>
+      <li><a class="menu-item" href="">Menu 11</a></li>
+      <li><a class="menu-item" href="">Menu 12</a></li>
+      <li><a class="menu-item" href="">Menu 13</a></li>
+      <li><a class="menu-item" href="">Menu 14</a></li>
+      <li><a class="menu-item" href="">Menu 15</a></li>
+      <li><a class="menu-item" href="">Menu 16</a></li>
+      <li><a class="menu-item" href="">Menu 17</a></li>
+      <li><a class="menu-item" href="">Menu 18</a></li>
+      <li><a class="menu-item" href="">Menu 19</a></li>
+      <li><a class="menu-item" href="">Menu 20</a></li>
+      <li><a class="menu-item" href="">Menu 21</a></li>
+      <li><a class="menu-item" href="">Menu 22</a></li>
+      <li><a class="menu-item" href="">Menu 23</a></li>
+      <li><a class="menu-item" href="">Menu 24</a></li>
+      <li><a class="menu-item" href="">Menu 25</a></li>
+      <li><a class="menu-item" href="">Menu 26</a></li>
+      <li><a class="menu-item" href="">Menu 27</a></li>
+      <li><a class="menu-item" href="">Menu 28</a></li>
+      <li><a class="menu-item" href="">Menu 29</a></li>
+      <li><a class="menu-item" href="">Menu 30</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="main">
+  <header id="header">
+      <span class="button menu-button-left">
+      </span>
+      <span class="button menu-button-right">
+      </span>
+  </header>
+  <div id="contents">
+    <div class="container">
+      <h1>Sidebar</h1>
+
+
+    </div>
+  </div><!-- contents -->
+</div>
+
+<script type="text/javascript" src="./sp-slidemenu.js"></script>
+<script>
+  var menu_left = SpSlidemenu({
+    main: '#main',
+    button: '.menu-button-left',
+    slidemenu: '.slidemenu-left',
+    direction: 'left'
+  });
+  var menu_right = SpSlidemenu({
+    main: '#main',
+    button: '.menu-button-right',
+    slidemenu: '.slidemenu-right',
+    direction: 'right'
+  });
+</script>
 </body>
 </html>
